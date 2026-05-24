@@ -60,7 +60,7 @@
                     <span class="stat-label">Databases<br>Replaced</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-num"><10<span class="stat-unit">ms</span></span>
+                    <span class="stat-num">&lt;10<span class="stat-unit">ms</span></span>
                     <span class="stat-label">Vector Search<br>p99 Latency</span>
                 </div>
                 <div class="stat">
@@ -84,7 +84,7 @@
                 <div class="deploy-command">
                     <span class="deploy-prompt">$</span>
                     <code>docker-compose up -d</code>
-                    <span class="deploy-copy" onclick="navigator.clipboard.writeText('docker-compose up -d');showToast('Copied!')">📋</span>
+                    <span class="deploy-copy" id="deployCopyBtn">📋</span>
                 </div>
                 <p class="deploy-desc">Get the full stack + 8 ML papers with embeddings + citation graph in 60 seconds</p>
             </div>
@@ -343,14 +343,14 @@ paths = client.traverse(<span class="token-string">"paper-001"</span>, edge_type
         <div class="contact-grid">
             <div class="contact-channels" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto; width: 100%;">
                 <div class="channel-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); display: grid; gap: 20px;">
-                    <a href="https://github.com/cognitive-data-fabric/cdf/issues/new?labels=question&title=[Question]%20" class="channel" target="_blank" id="issueCard">
+                    <a href="https://github.com/cognitive-data-fabric/cdf/issues/new?labels=question&title=[Question]%20" class="channel" target="_blank">
                         <div class="channel-icon">🐛</div>
                         <div class="channel-info">
                             <h4>Report an Issue</h4>
                             <p>Found a bug? Request a feature? Open a GitHub Issue.</p>
                         </div>
                     </a>
-                    <a href="https://github.com/cognitive-data-fabric/cdf/discussions/new?category=general" class="channel" target="_blank" id="discussionCard">
+                    <a href="https://github.com/cognitive-data-fabric/cdf/discussions/new?category=general" class="channel" target="_blank">
                         <div class="channel-icon">💬</div>
                         <div class="channel-info">
                             <h4>Start a Discussion</h4>
@@ -371,24 +371,6 @@ paths = client.traverse(<span class="token-string">"paper-001"</span>, edge_type
                             <p>Setup, code style, and PR workflow explained.</p>
                         </div>
                     </a>
-                </div>
-
-                <!-- Inline discussion starter -->
-                <div class="discussion-starter" style="margin-top: 40px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 32px;">
-                    <h3 style="margin-bottom: 8px; font-size: 1.2rem;">💡 Have something to share?</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.95rem;">Write your message below and we'll take you to GitHub Discussions with everything pre-filled.</p>
-                    <div class="form-group" style="margin-bottom: 16px;">
-                        <input type="text" id="discTitle" placeholder="Title of your idea or question" style="width: 100%; padding: 12px 16px; background: var(--bg-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: inherit; font-size: 0.95rem; outline: none;">
-                    </div>
-                    <div class="form-group" style="margin-bottom: 16px;">
-                        <textarea id="discBody" rows="4" placeholder="Describe your idea, question, or feedback..." style="width: 100%; padding: 12px 16px; background: var(--bg-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: inherit; font-size: 0.95rem; outline: none; resize: vertical;"></textarea>
-                    </div>
-                    <button class="btn btn-primary" id="discBtn" style="width: 100%; justify-content: center;">Post to GitHub Discussions</button>
-                </div>
-
-                <div class="support-hours" style="margin-top: 32px; text-align: center;">
-                    <h4>📅 Community Hours</h4>
-                    <p>All collaboration happens on GitHub — Issues for bugs, Discussions for ideas.<br>Responses typically within 24–48 hours.</p>
                 </div>
             </div>
         </div>
@@ -427,7 +409,7 @@ paths = client.traverse(<span class="token-string">"paper-001"</span>, edge_type
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 Cognitive Data Fabric Team. Dual-licensed under <a href="https://github.com/cognitive-data-fabric/cdf/blob/main/LICENSE-MIT" target="_blank">MIT</a> OR <a href="https://github.com/cognitive-data-fabric/cdf/blob/main/LICENSE-APACHE" target="_blank">Apache-2.0</a>.</p>
+            <p>© 2026 Cognitive Data Fabric Team. Dual-licensed under <a href="https://github.com/cognitive-data-fabric/cdf/blob/main/LICENSE-MIT" target="_blank">MIT</a> OR <a href="https://github.com/cognitive-data-fabric/cdf/blob/main/LICENSE-APACHE" target="_blank">Apache-2.0</a>.</p>
         </div>
     </footer>
 
